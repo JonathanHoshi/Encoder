@@ -22,6 +22,7 @@ public class Main {
         System.out.println("ED1 Plain Text       : " + ed1PlainText);
         System.out.println("Encode > Encoded Text: " + ed1EncodedText);
         System.out.println("Decode > Decoded Text: " + ed1DecodedText);
+        System.out.println();
 
         String ed2PlainText = "hello world";
         String ed2EncodedText = randomEncoder.encode(ed2PlainText);
@@ -30,6 +31,7 @@ public class Main {
         System.out.println("ED2 Plain Text       : " + ed2PlainText);
         System.out.println("Encode > Encoded Text: " + ed2EncodedText);
         System.out.println("Decode > Decoded Text: " + ed2DecodedText);
+        System.out.println();
 
         // Decoding test case (random)
         String d1EncodedText = "BGDKKN VNQKC";
@@ -37,12 +39,14 @@ public class Main {
 
         System.out.println("D1 Encoded Text      : " + d1EncodedText);
         System.out.println("Decode > Plain Text  : " + d1PlainText);
+        System.out.println();
 
         String d2EncodedText = "FC/GGJ RJMG.";
         String d2PlainText = randomEncoder.decode(d2EncodedText);
 
         System.out.println("D2 Encoded Text      : " + d2EncodedText);
         System.out.println("Decode > Plain Text  : " + d2PlainText);
+        System.out.println();
     }
 
     public static void fixedBEncoder() {
@@ -62,6 +66,7 @@ public class Main {
         System.out.println("ED1 (B) Plain Text   : " + ed1PlainText);
         System.out.println("Encode > Encoded Text: " + ed1EncodedText);
         System.out.println("Decode > Decoded Text: " + ed1DecodedText);
+        System.out.println();
 
         // Decoding test case
         String d1EncodedText = "FC/GGJ RJMG.";
@@ -69,5 +74,6 @@ public class Main {
 
         System.out.println("D1 Encoded Text      : " + d1EncodedText);
         System.out.println("Decode > Plain Text  : " + d1PlainText);
+        System.out.println();
     }
 }
